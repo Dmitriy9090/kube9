@@ -17,3 +17,8 @@
 ![logo](cj_start2.png)
 ## так как мы выставили activeDeadlinesecond 100 сек. мы можем увидеть что под удаляется через 100 секунд в то время как job продолжает работу, по истечении 5 мин . запустится новый pod с новым job
 ![logo](cj_start3.png)
+## 2. Создадим простой CronJob, как указано в задании, взьмем готовый манифест с семинара и немного подправим его, начнем с политики перезапуска Forbid
+![logo](cj_forbid.png)
+![logo](cj_forbid1.png)
+## Командой (которой поделился преподователь)) kubectl create job -n test --from=cronjob.batch/hello manual-run досрочно запустим задачу.
+![logo](cj_new.png)
